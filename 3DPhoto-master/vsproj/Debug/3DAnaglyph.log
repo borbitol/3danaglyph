@@ -1,0 +1,42 @@
+﻿Построение начато 02.05.2017 20:36:41.
+     1>Проект "C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\3DAnaglyph.vcxproj" в узле 2 (целевые объекты rebuild).
+     1>_PrepareForClean:
+         Файл "Debug\3DAnaglyph.lib.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Создание "Debug\3DAnaglyph.lib.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include /I..\include\_include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"_3DAnaglyph.h" /Fp"Debug\3DAnaglyph.lib.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\3danaglyph.cpp ..\src\3ddisplace.cpp ..\src\3dfilenameutils.cpp ..\src\3dfilter.cpp ..\src\3dfulldepth.cpp ..\src\3dinterpolate1.cpp ..\src\3dmakeanaglyph.cpp ..\src\3dmaketile.cpp ..\src\3dmaskgradient.cpp ..\src\3dsigma.cpp ..\src\3dsparcedepth.cpp ..\src\avi_utils.cpp
+         avi_utils.cpp
+         3dsparcedepth.cpp
+         3dsigma.cpp
+         3dmaskgradient.cpp
+         3dmaketile.cpp
+         3dmakeanaglyph.cpp
+         3dinterpolate1.cpp
+         3dfulldepth.cpp
+         3dfilter.cpp
+         3dfilenameutils.cpp
+         3ddisplace.cpp
+         3danaglyph.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\3DAnaglyph.lib.lib" /NOLOGO Debug\3danaglyph.obj
+         Debug\3ddisplace.obj
+         Debug\3dfilenameutils.obj
+         Debug\3dfilter.obj
+         Debug\3dfulldepth.obj
+         Debug\3dinterpolate1.obj
+         Debug\3dmakeanaglyph.obj
+         Debug\3dmaketile.obj
+         Debug\3dmaskgradient.obj
+         Debug\3dsigma.obj
+         Debug\3dsparcedepth.obj
+         Debug\avi_utils.obj
+         3DAnaglyph.vcxproj -> C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\3DAnaglyph.lib.lib
+       FinalizeBuildStatus:
+         Файл "Debug\3DAnaglyph.lib.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\3DAnaglyph.lib.lastbuildstate".
+     1>Построение проекта "C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\3DAnaglyph.vcxproj" завершено (целевые объекты rebuild).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.40

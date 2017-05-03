@@ -1,0 +1,36 @@
+﻿Построение начато 02.05.2017 20:36:43.
+     1>Проект "C:\Users\Aleksandr\Downloads\3DPhoto-master\tests\test03\test03.vcxproj" в узле 5 (целевые объекты rebuild).
+     1>_PrepareForClean:
+         Файл "Debug\test03.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Создание "Debug\test03.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include\_include\ /I..\..\include\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\test03.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include\_include\ /I..\..\include\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\test03.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt test03.cpp
+         test03.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\test03.exe) не соответствует значению свойства выходного файла (C:\Users\Aleksandr\Downloads\3DPhoto-master\bin\test03.exe) для Linker. Это может привести к неправильному построению проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\test03.exe" /INCREMENTAL:NO /LIBPATH:..\..\lib cv210.lib cxcore210.lib highgui210.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\test03.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\test03.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\test03.lib" /MACHINE:X86 Debug\stdafx.obj
+         Debug\test03.obj
+         "C:\Users\Aleksandr\Downloads\3DPhoto-master\3rdparty\CSparse\lib\vce_sparce.lib"
+         "C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\3DAnaglyph.lib.lib"
+         Microsoft (R) Incremental Linker Version 10.00.30319.01
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         "/OUT:..\..\bin\test03.exe" /INCREMENTAL:NO /LIBPATH:..\..\lib cv210.lib cxcore210.lib highgui210.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST "/ManifestFile:Debug\test03.exe.intermediate.manifest" "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /DEBUG "/PDB:C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\test03.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\test03.lib" /MACHINE:X86 Debug\stdafx.obj 
+         Debug\test03.obj 
+         "C:\Users\Aleksandr\Downloads\3DPhoto-master\3rdparty\CSparse\lib\vce_sparce.lib" 
+         "C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\3DAnaglyph.lib.lib" 
+     1>stdafx.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/INCREMENTAL:NO"
+         test03.vcxproj -> C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\test03.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\bin\test03.exe;#1" /manifest Debug\test03.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Debug\test03.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\test03.lastbuildstate".
+     1>Построение проекта "C:\Users\Aleksandr\Downloads\3DPhoto-master\tests\test03\test03.vcxproj" завершено (целевые объекты rebuild).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.84

@@ -1,0 +1,133 @@
+﻿Построение начато 02.05.2017 20:36:39.
+     1>Проект "C:\Users\Aleksandr\Downloads\3DPhoto-master\3rdparty\CSparse\vce_sparce\vce_sparce.vcxproj" в узле 2 (целевые объекты rebuild).
+     1>_PrepareForClean:
+         Файл "Debug\vce_sparce.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Создание "Debug\vce_sparce.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\Source\cs_add.c ..\Source\cs_amd.c ..\Source\cs_chol.c ..\Source\cs_cholsol.c ..\Source\cs_compress.c ..\Source\cs_counts.c ..\Source\cs_cumsum.c ..\Source\cs_dfs.c ..\Source\cs_dmperm.c ..\Source\cs_droptol.c ..\Source\cs_dropzeros.c ..\Source\cs_dupl.c ..\Source\cs_entry.c ..\Source\cs_ereach.c ..\Source\cs_etree.c ..\Source\cs_fkeep.c ..\Source\cs_gaxpy.c ..\Source\cs_happly.c ..\Source\cs_house.c ..\Source\cs_ipvec.c ..\Source\cs_leaf.c ..\Source\cs_load.c ..\Source\cs_lsolve.c ..\Source\cs_ltsolve.c ..\Source\cs_lu.c ..\Source\cs_lusol.c ..\Source\cs_malloc.c ..\Source\cs_maxtrans.c ..\Source\cs_multiply.c ..\Source\cs_norm.c ..\Source\cs_permute.c ..\Source\cs_pinv.c ..\Source\cs_post.c ..\Source\cs_print.c ..\Source\cs_pvec.c ..\Source\cs_qr.c ..\Source\cs_qrsol.c ..\Source\cs_randperm.c ..\Source\cs_reach.c ..\Source\cs_scatter.c ..\Source\cs_scc.c ..\Source\cs_schol.c ..\Source\cs_spsolve.c ..\Source\cs_sqr.c ..\Source\cs_symperm.c ..\Source\cs_tdfs.c ..\Source\cs_transpose.c ..\Source\cs_updown.c ..\Source\cs_usolve.c ..\Source\cs_util.c ..\Source\cs_utsolve.c
+         cs_utsolve.c
+         cs_util.c
+         cs_usolve.c
+         cs_updown.c
+         cs_transpose.c
+         cs_tdfs.c
+         cs_symperm.c
+         cs_sqr.c
+         cs_spsolve.c
+         cs_schol.c
+         cs_scc.c
+         cs_scatter.c
+         cs_reach.c
+         cs_randperm.c
+         cs_qrsol.c
+         cs_qr.c
+     1>c:\users\aleksandr\downloads\3dphoto-master\3rdparty\csparse\source\cs_qr.c(13): warning C4244: =: преобразование "const double" в "int", возможна потеря данных
+     1>c:\users\aleksandr\downloads\3dphoto-master\3rdparty\csparse\source\cs_qr.c(13): warning C4244: =: преобразование "const double" в "int", возможна потеря данных
+         cs_pvec.c
+         cs_print.c
+         cs_post.c
+         cs_pinv.c
+         Создание кода...
+         Компиляция...
+         cs_permute.c
+         cs_norm.c
+         cs_multiply.c
+         cs_maxtrans.c
+         cs_malloc.c
+         cs_lusol.c
+         cs_lu.c
+     1>c:\users\aleksandr\downloads\3dphoto-master\3rdparty\csparse\source\cs_lu.c(11): warning C4244: =: преобразование "const double" в "int", возможна потеря данных
+     1>c:\users\aleksandr\downloads\3dphoto-master\3rdparty\csparse\source\cs_lu.c(11): warning C4244: =: преобразование "const double" в "int", возможна потеря данных
+         cs_ltsolve.c
+         cs_lsolve.c
+         cs_load.c
+     1>c:\users\aleksandr\downloads\3dphoto-master\3rdparty\csparse\source\cs_load.c(10): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253): см. объявление "fscanf"
+         cs_leaf.c
+         cs_ipvec.c
+         cs_house.c
+         cs_happly.c
+         cs_gaxpy.c
+         cs_fkeep.c
+         cs_etree.c
+         cs_ereach.c
+         cs_entry.c
+         cs_dupl.c
+         Создание кода...
+         Компиляция...
+         cs_dropzeros.c
+         cs_droptol.c
+         cs_dmperm.c
+         cs_dfs.c
+         cs_cumsum.c
+         cs_counts.c
+         cs_compress.c
+         cs_cholsol.c
+         cs_chol.c
+         cs_amd.c
+     1>c:\users\aleksandr\downloads\3dphoto-master\3rdparty\csparse\source\cs_amd.c(31): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+         cs_add.c
+         Создание кода...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\vce_sparce.lib) не соответствует значению свойства выходного файла (C:\Users\Aleksandr\Downloads\3DPhoto-master\3rdparty\CSparse\lib\vce_sparce.lib) для Library. Это может привести к неправильному построению проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Lib.OutputFile).
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\lib\vce_sparce.lib" /NOLOGO Debug\cs_add.obj
+         Debug\cs_amd.obj
+         Debug\cs_chol.obj
+         Debug\cs_cholsol.obj
+         Debug\cs_compress.obj
+         Debug\cs_counts.obj
+         Debug\cs_cumsum.obj
+         Debug\cs_dfs.obj
+         Debug\cs_dmperm.obj
+         Debug\cs_droptol.obj
+         Debug\cs_dropzeros.obj
+         Debug\cs_dupl.obj
+         Debug\cs_entry.obj
+         Debug\cs_ereach.obj
+         Debug\cs_etree.obj
+         Debug\cs_fkeep.obj
+         Debug\cs_gaxpy.obj
+         Debug\cs_happly.obj
+         Debug\cs_house.obj
+         Debug\cs_ipvec.obj
+         Debug\cs_leaf.obj
+         Debug\cs_load.obj
+         Debug\cs_lsolve.obj
+         Debug\cs_ltsolve.obj
+         Debug\cs_lu.obj
+         Debug\cs_lusol.obj
+         Debug\cs_malloc.obj
+         Debug\cs_maxtrans.obj
+         Debug\cs_multiply.obj
+         Debug\cs_norm.obj
+         Debug\cs_permute.obj
+         Debug\cs_pinv.obj
+         Debug\cs_post.obj
+         Debug\cs_print.obj
+         Debug\cs_pvec.obj
+         Debug\cs_qr.obj
+         Debug\cs_qrsol.obj
+         Debug\cs_randperm.obj
+         Debug\cs_reach.obj
+         Debug\cs_scatter.obj
+         Debug\cs_scc.obj
+         Debug\cs_schol.obj
+         Debug\cs_spsolve.obj
+         Debug\cs_sqr.obj
+         Debug\cs_symperm.obj
+         Debug\cs_tdfs.obj
+         Debug\cs_transpose.obj
+         Debug\cs_updown.obj
+         Debug\cs_usolve.obj
+         Debug\cs_util.obj
+         Debug\cs_utsolve.obj
+         vce_sparce.vcxproj -> C:\Users\Aleksandr\Downloads\3DPhoto-master\vsproj\Debug\vce_sparce.lib
+       FinalizeBuildStatus:
+         Файл "Debug\vce_sparce.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\vce_sparce.lastbuildstate".
+     1>Построение проекта "C:\Users\Aleksandr\Downloads\3DPhoto-master\3rdparty\CSparse\vce_sparce\vce_sparce.vcxproj" завершено (целевые объекты rebuild).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:01.43
