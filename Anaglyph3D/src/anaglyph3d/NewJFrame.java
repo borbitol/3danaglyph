@@ -3,6 +3,7 @@ package anaglyph3d;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -29,39 +30,77 @@ public class NewJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         FileChooser = new javax.swing.JFileChooser();
-        Open = new javax.swing.JButton();
-        Convert = new javax.swing.JButton();
-        Save = new javax.swing.JButton();
-        Exit = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        JSP = new javax.swing.JScrollPane();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        file = new javax.swing.JMenu();
+        Open = new javax.swing.JMenuItem();
+        Clear = new javax.swing.JMenuItem();
+        Save = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        Exit = new javax.swing.JMenuItem();
+        help = new javax.swing.JMenu();
+        info = new javax.swing.JMenuItem();
 
         FileChooser.setDialogTitle("Мой открытый диалог");
         FileChooser.setFileFilter(new MyCustomFilter());
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        file.setText("Файл");
+
+        Open.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
         Open.setText("Открыть");
         Open.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 OpenActionPerformed(evt);
             }
         });
+        file.add(Open);
 
-        Convert.setText("Конвертировать");
+        Clear.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        Clear.setText("Очистить");
+        Clear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ClearActionPerformed(evt);
+            }
+        });
+        file.add(Clear);
 
+        Save.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
         Save.setText("Сохранить");
+        Save.setActionCommand("Сохранить");
         Save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaveActionPerformed(evt);
             }
         });
+        file.add(Save);
+        file.add(jSeparator1);
 
+        Exit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
         Exit.setText("Выход");
         Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExitActionPerformed(evt);
             }
         });
+        file.add(Exit);
+
+        jMenuBar1.add(file);
+
+        help.setText("Помощь");
+
+        info.setText("О программе");
+        info.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                infoActionPerformed(evt);
+            }
+        });
+        help.add(info);
+
+        jMenuBar1.add(help);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -69,50 +108,28 @@ public class NewJFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(Open)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Convert)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Save)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                        .addComponent(Exit)))
+                .addComponent(JSP, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Open)
-                    .addComponent(Convert)
-                    .addComponent(Save)
-                    .addComponent(Exit))
+                .addComponent(JSP, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_ExitActionPerformed
-
+    JLabel jlab = new JLabel();
     private void OpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpenActionPerformed
-        int returnVal = FileChooser.showOpenDialog(this);
-    if (returnVal == JFileChooser.APPROVE_OPTION) {
-        // Если директория выбрана, покажем ее в сообщении
-        JOptionPane.showMessageDialog(this, FileChooser.getSelectedFile());
-        File file = FileChooser.getSelectedFile();
-       // try {
-          // What to do with the file
-        //} catch (IOException ex) {
-       //   System.out.println("problem accessing file"+file.getAbsolutePath());
-       // }
+        JFileChooser jfc = new JFileChooser();
+        if (jfc.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
+        java.io.File f = jfc.getSelectedFile();      
+        jlab.setIcon(new ImageIcon(f.toString()));
+        jlab.setHorizontalAlignment(JLabel.CENTER);
+        JSP.getViewport().add(jlab);
     } else {
         System.out.println("File access cancelled by user.");
     }
@@ -125,11 +142,22 @@ public class NewJFrame extends javax.swing.JFrame {
         // Если файл выбран, то представим его в сообщении
         JOptionPane.showMessageDialog(this, "Файл '" + FileChooser.getSelectedFile() + 
                               " сохранен");
-        File file = FileChooser.getSelectedFile();
     } else {
         System.out.println("File access cancelled by user.");
-    }     
+    }  
     }//GEN-LAST:event_SaveActionPerformed
+
+    private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_ExitActionPerformed
+
+    private void infoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoActionPerformed
+        JOptionPane.showMessageDialog(this, "Данная программа показывает выбранную картинку");
+    }//GEN-LAST:event_infoActionPerformed
+
+    private void ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearActionPerformed
+        jlab.setIcon(null);
+    }//GEN-LAST:event_ClearActionPerformed
 
     /**
      * @param args the command line arguments
@@ -181,11 +209,16 @@ public class NewJFrame extends javax.swing.JFrame {
     } 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Convert;
-    private javax.swing.JButton Exit;
+    private javax.swing.JMenuItem Clear;
+    private javax.swing.JMenuItem Exit;
     private javax.swing.JFileChooser FileChooser;
-    private javax.swing.JButton Open;
-    private javax.swing.JButton Save;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane JSP;
+    private javax.swing.JMenuItem Open;
+    private javax.swing.JMenuItem Save;
+    private javax.swing.JMenu file;
+    private javax.swing.JMenu help;
+    private javax.swing.JMenuItem info;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
